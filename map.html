@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>WEBGIS </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href ="assets/vendor/animate.css/animate.min.css" rel ="stylesheet">
+  <link href ="assets/vendor/bootstrap/css/bootstrap.min.css" rel ="stylesheet">
+  <link href ="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel ="stylesheet">
+  <link href ="assets/vendor/boxicons/css/boxicons.min.css" rel ="stylesheet">
+  <link href ="assets/vendor/glightbox/css/glightbox.min.css" rel ="stylesheet">
+  <link href ="assets/vendor/swiper/swiper-bundle.min.css" rel ="stylesheet">
+ 
+  <link rel ="stylesheet" href ="lib/bootstrap.min.css">
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+ 
+  <link rel ="stylesheet" href ="lib/leaflet.css">
+  <script src="lib/leaflet.js"></script>
+  <script src="lib/L.TileLayer.BetterWMS.js"></script>
+  <script src="lib/leaflet.ajax.min.js"></script>
+  <link rel ="stylesheet" href ="css/index.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="map.html">Tân Bình - Đồng Xoài</h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero"> </a></li>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto " href="#trangmap">Project</a></li>
+          <li><a class="nav-link scrollto active" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto " href="redirect.php">Air</a></li>
+          <li><a class="getstarted scrollto" href="log_out.php">Log Out</a></li>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Webgis </span></h2>
+              <p class="animate__animated animate__fadeInUp">Trang web sẽ giúp bạn dễ dàng truy cứu về số thửa, số tờ và chủ sở hữu giúp dễ dàng trong việc mua bán trao đổi đất tại địa bàn phường Tân Bình thành phố Đồng Xoài.</p>
+              <a href="https://vi.wikipedia.org/wiki/T%C3%A2n_B%C3%ACnh,_%C4%90%E1%BB%93ng_Xo%C3%A0i" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+
+     
+    </div>
+  </section><!-- End Hero -->
+
+
+    <!-- ======= Featured Services Section ======= -->
+   
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Giới thiệu</h2>
+          <p> Dưới đây là giới thiệu chung qua về trường và chuyên ngành.</p>
+        </div>
+
+        <div class="row slide-show">
+          <div class="list-images">
+            <div class="imgs" style="display: flex; padding-left: 120px; padding-right: 120px;">
+              <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content" style="padding-right: 300px; padding-left: 30px;">
+                
+                <p class="fst-italic">
+                  <i class="bi bi-check-circled"></i>Lịch sử hình thành và phát triển: Trường Đại học Nông Lâm TP.HCM được thành lập năm 1955. Trải qua nhiều giai đoạn phát triển, trường đã khẳng định vị trí hàng đầu trong lĩnh vực đào tạo và nghiên cứu về nông nghiệp, lâm nghiệp, thủy sản, môi trường và quản lý tài nguyên thiên nhiên.
+                  <a href="https://www.hcmuaf.edu.vn/">Xem thêm về Đại học Nông Lâm</a>
+                </p>
+              </div>
+                <div class="img">
+                  <img src="assets/img/slide/nlu.jpg" alt="">
+                </div>
+            </div>
+            <div class="imgs" style="display: flex;">
+              <div class="img">
+                <img src="assets/img/slide/gis.jpg" alt="">
+              </div>
+              <div class="col-lg-8 pt-4 pt-lg-0 order-2 order-lg-1 content" >
+                <h3>Chuyên ngành</h3>
+                <p class="fst-italic">
+                  <i class="bi bi-check-circled"></i> Về chuyên ngành: Kiến thức cơ bản: Sinh viên sẽ được trang bị kiến thức nền tảng về toán học, khoa học máy tính, và các nguyên lý cơ bản của hệ thống thông tin.
+                    Kiến thức chuyên ngành: Bao gồm các môn học như cơ sở dữ liệu, phân tích và thiết kế hệ thống, quản trị hệ thống thông tin, lập trình ứng dụng, mạng máy tính, bảo mật thông tin, khai phá dữ liệu, và các môn học liên quan đến quản lý dự án công nghệ thông tin.
+                    Kỹ năng thực hành: Sinh viên được tham gia các dự án thực tế, thực tập tại các doanh nghiệp, và các bài tập lớn để rèn luyện kỹ năng thực hành và ứng dụng kiến thức vào giải quyết các vấn đề thực tiễn..
+                  <a href="https://ts.hcmuaf.edu.vn/ts-36002-1/vn/nganh-he-thong-thong-tin-du-kien-mo-va-tuyen-sinh-nam-2020.html">Xem thêm ngành Hệ thống thông tin</a>
+                </p>
+              </div>
+            </div>
+          </div>
+              <div class="btns">
+                <div class="btn-left btn"><i class='bx bx-chevron-left'></i></div>
+                <div class="btn-right btn" ><i class='bx bx-chevron-right'></i></div></div>
+                <div class="index-images">
+                  <div class="index-item1 index-item-0 active1"></div>
+                  <div class="index-item1 index-item-1"></div>
+                </div>
+  
+              
+              
+          </div>
+  
+        </div>
+      </section>
+              <!-- End About Us Section -->
+  <!-- ======= Team Section ======= -->
+  <section id="team" class="team section-bg">
+    <div class="container">
+
+		<div class="section-title">
+        <h2>Tham gia đề tài</h2>
+        
+		</div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <img src="assets/img/team/team-1.jpg" alt="">
+            <h4>Bùi Phú Gia Huy </h4>
+            <span>21166125</span>
+			<span>Sinh viên thực hiện</span>
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>            
+          </div>
+      
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <img src="assets/img/team/team-2.png" alt="">
+            <h4>Lê Hoàng Tú </h4>
+            <span>Giáo viên hướng dẫn</span>
+           
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>            
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-3.png" alt="">
+              <h4>Khưu Minh Cảnh </h4>
+              <span>Giáo viên hướng dẫn</span>
+
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>            
+            </div>
+
+            
+      </div>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->
+
+   
+    <!-- ======= Trang bản đồ Section ======= -->
+
+    
+    
+    <div id="trangmap" class="trangmap">
+      <div class="container-fluid text-center">
+        <div class="row content" style="height: 85vh;">   
+          <div class="col-sm-3 sidenav">
+            <form class="form-horizontal" style="margin-right: 70px;">
+    
+              <div class="form-group">
+                <label class="control-label col-sm-4" for="shbando">Số tờ:</label>
+                <div class="col-sm-8">
+                  <input type="number" class="form-control" id="shbando" name="shbando" placeholder="Nhập số hiệu bản đồ">
+                </div>
+              </div>
+    
+              <div class="form-group">
+                <label class="control-label col-sm-4" for="shthua">Số thửa:</label>
+                <div class="col-sm-8">
+                  <input type="number" class="form-control" id="shthua" name="shthua" placeholder="Nhập số thừa bản đồ">
+                </div>
+              </div>
+    
+              <div class="form-group">
+				<hr style="margin: 8px;">
+                <div class="col-sm-offset-2 col-sm-10 ">
+                  <button type="button" onclick="timkiem_thuadat();" class="btn btn-default" id="btn_timkiem" name="btn_timkiem">Tìm kiếm</button>
+                </div>
+              </div>   
+            </form>   
+               
+            <div id="kq" style="margin-left: 20px;"> <!-- Điều chỉnh giá trị này để di chuyển phần tử xa hơn sang phải -->
+				Kết quả tìm kiếm...
+			</div>
+          </div>
+    
+          <div class="col-sm-9 text-left" style="display: flex; height: 100%; padding: 0px;">
+            <div id="map" style="width: 100%; height:100%; "></div>
+          </div>  
+        </div>
+      </div>
+    </div><!-- End Portfolio Section -->
+
+    
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>Thông tin liên hệ.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-5 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+          <h4>Location:Khu phố 6, Phường Linh Trung, TP. Thủ Đức, TP. Hồ Chí Minh.</h4>
+
+          </div>
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+          <h4>Email:</h4>
+            <p>nls@hcmuaf.edu.vn</p>
+            <iframe width="436" height="334" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+(Nong%20Lam%20University)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.de/'>Doktorarbeit Ghostwriter</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=191d2abb3e7207ed76dfbef5565d2574e76853e0'></script>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form id="contactForm" class="php-email-form">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Your Name</label>
+              <input type="text" name="name" class="form-control" id="name" required>
+            </div>
+            <div class="form-group col-md-6 mt-3 mt-md-0">
+              <label for="name">Your Email</label>
+              <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="contact_issue">Contact Issue</label>
+            <input type="text" class="form-control" name="contact_issue" id="contact_issue" required>
+          </div>
+          
+          <div class="form-group mt-3">
+            <label for="message">Message</label>
+            <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+    
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      
+      <h3>ĐỒ ÁN TỐT NGHIỆP</h3>
+    
+      
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/func.js"></script>
+  <!-- <script src="/assets/js/slide-show.js"></script> -->
+
+  <script>
+    // Contact form submission handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contactForm');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Show loading animation
+          const loadingElement = this.querySelector('.loading');
+          const errorElement = this.querySelector('.error-message');
+          const sentElement = this.querySelector('.sent-message');
+          
+          // Reset message displays
+          loadingElement.style.display = 'block';
+          errorElement.style.display = 'none';
+          sentElement.style.display = 'none';
+          
+          // Collect form data
+          const formData = new FormData(this);
+          
+          // Send AJAX request
+          fetch('forms/contact.php', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            // Hide loading animation
+            loadingElement.style.display = 'none';
+            
+            if (data.success) {
+              // Show success message
+              sentElement.style.display = 'block';
+              // Reset form
+              contactForm.reset();
+            } else {
+              // Show error message
+              errorElement.textContent = data.message;
+              errorElement.style.display = 'block';
+            }
+          })
+          .catch(error => {
+            // Hide loading animation
+            loadingElement.style.display = 'none';
+            
+            // Show error message
+            errorElement.textContent = 'An error occurred. Please try again later.';
+            errorElement.style.display = 'block';
+            console.error('Error:', error);
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
